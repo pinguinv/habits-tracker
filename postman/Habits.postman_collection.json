@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "97ccd882-53cf-4c7d-9408-7b9162262146",
+		"name": "Habits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Habit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"habitName\": \"habit1\",\n    \"description\": \"description\",\n    \"numReps\": 2,\n    \"durationTime\": \"1000\",\n    \"period\": \"DAILY\",\n    \"remind\": true,\n    \"color\": \"BLUE\",\n    \"icon\": \"ICON3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/habits/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"habits",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Habit 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"habitName\": \"habit1 updated\",\n    \"description\": \"description\",\n    \"numReps\": 2,\n    \"durationTime\": \"1000\",\n    \"period\": \"DAILY\",\n    \"remind\": true,\n    \"color\": \"BLUE\",\n    \"icon\": \"ICON3\",\n    \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/habits/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"habits",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Habits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/habits/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"habits",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
