@@ -1,11 +1,17 @@
-# Frontend
+# Habits Tracker
+
+This is a fullstack app for tracking progress in forming habits.  
+Project was created by me during my first apprenticeship in February 2023.
 
 ## Node.js
 
-Żeby odpalić frontend trzeba pobrać [Node.js](https://nodejs.org)
-komendy poniżej (przeklejone z pliku README.md projektu vue).
+To run fontend you need to have [Node.js](https://nodejs.org) and NPM installed.
 
-## Project Setup
+## Vue Frontend
+
+All node commands needs to be ran in [frontend subdirectory](/frontend)
+
+### Setup
 
 ```sh
 npm install
@@ -22,14 +28,9 @@ npm run dev
 ```sh
 npm run build
 ```
-# Backend
+## Spring Backend
 
-## Database
-
-Żeby można było uruchomić backend komendą poniżej, na początku trzeba odpalić bazę danych, 
-inaczej wyrzuca błędy kompilacji. Ja do tego używam XAMPPa. Trzeba również dostosować plik
-[src/main/resources/application.properties](src/main/resources/application.properties) 
-do swojej bazy, tzn. prawdopodobnie zmienić `url`, `username` i `password`.
+Backend commands can be ran from project directory.
 
 ### Compile and Hot-Reload for Development
 
@@ -37,3 +38,9 @@ do swojej bazy, tzn. prawdopodobnie zmienić `url`, `username` i `password`.
 ./gradlew bootRun
 ```
  
+## Database
+
+To start backend with above command first you have to create and run your local db.  
+Then configure [this file](src/main/resources/application.properties) (`url`, `username` & `password`).  
+Otherwise backend won't run, compilation errors will occur.  
+For db purposes I used XAMPP.
