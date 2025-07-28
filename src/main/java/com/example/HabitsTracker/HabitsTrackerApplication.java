@@ -21,35 +21,4 @@ public class HabitsTrackerApplication extends WebMvcConfigurerAdapter {
 				.allowedMethods("*");
 	}
 
-	/*
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		String VuePath = "http://localhost:5173";
-		String ApiHabitsPath = "/api/habits";
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping(ApiHabitsPath + "/save")
-					.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/all")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/findById")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/find/{habitId}/{status}")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/deleteById")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/addDone")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/isHabitDoneCheckAndSaveOrDeleteById")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/findDoneByCreated")
-						.allowedOrigins(VuePath);
-				registry.addMapping(ApiHabitsPath + "/allDone")
-						.allowedOrigins(VuePath);
-			}
-		};
-	}
-	*/
-
 }
